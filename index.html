@@ -6,6 +6,7 @@
   <title>Real Estate</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="hero.css">
 </head>
 <body>
 <header class="nav-container">
@@ -22,14 +23,48 @@
     <a href="#">About Us</a>
     <a href="#">Contact</a>
     <div class="social-icons">
-      <i class="fa-solid fa-magnifying-glass"></i>
+      <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
       <i class="fa-solid fa-phone"></i>
     </div>
   </nav>
 </header>
-<main class="page-content">
-  <h1>Welcome to HomeDeal</h1>
-  <p>Resize the browser to see the responsive navbar in action.</p>
-</main>
+<section class="hero-slider">
+  <div class="hero-overlay"></div>
+
+  <div class="slides">
+    <div class="slide">
+      <div class="slide-image" style="background-image: url('https://avatars.mds.yandex.net/get-altay/1618837/2a00000169871af428c3a8fa78cf17a1ce6e/XXXL'); background-size: cover; background-position: center;"></div>
+    </div>
+
+    <div class="slide">
+      <div class="slide-image" style="background-image: url('https://i.pinimg.com/originals/90/0c/9f/900c9f6d7f02cff1904807d979f7a62a.png'); background-size: cover; background-position: center;"></div>
+    </div>
+
+    <div class="slide">
+      <div class="slide-image" style="background-image: url('https://images.unsplash.com/photo-1572120360610-d971b9d7767c?auto=format&fit=crop&w=1600&q=80'); background-size: cover; background-position: center;"></div>
+    </div>
+
+    <div class="slide">
+      <div class="slide-image" style="background-image: url('https://images.unsplash.com/photo-1600047509807-01d4e201a6be?auto=format&fit=crop&w=1600&q=80'); background-size: cover; background-position: center;"></div>
+    </div>
+
+  </div>
+  <div class="hero-content">
+    <p class="eyebrow">Find your perfect fit</p>
+    <h1 class="hero-title">
+      Discover Your <span>Elegant</span> Home!
+    </h1>
+    <p class="hero-subtitle">
+      We can find you the perfect property & help you locate the home of your dreams.
+    </p>
+    <div class="hero-cta">
+      <a href="#" class="btn btn-primary">Explore Properties</a>
+      <a href="#" class="btn btn-outline">Request Callback</a>
+    </div>
+    <div class="hero-stats">
+    </div>
+  </div>
+</section>
+<script src="hero.js"></script>
 </body>
 </html>

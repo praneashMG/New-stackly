@@ -15,14 +15,9 @@
 body {
   background: var(--highlight);
 }
-
-/* Push content down so it's not hidden behind fixed header */
 .page-content {
   padding: 100px 16px 40px;
 }
-
-/* ========== NAVBAR (MOBILE-FIRST) ========== */
-
 .nav-container {
   position: fixed;
   top: 0;
@@ -43,13 +38,9 @@ body {
   max-width: 140px;
   object-fit: contain;
 }
-
-/* Checkbox hidden */
 .nav-toggle {
   display: none;
 }
-
-/* Hamburger button for mobile */
 .nav-toggle-label {
   display: flex;
   align-items: center;
@@ -58,8 +49,6 @@ body {
   cursor: pointer;
   color: var(--primary);
 }
-
-/* Menu for mobile: full-width dropdown */
 .nav-menu {
   position: absolute;
   top: 100%;
@@ -91,8 +80,6 @@ body {
 .nav-menu a:hover {
   color: var(--secondary);
 }
-
-/* Social icons (inside dropdown on mobile) */
 .social-icons {
   display: flex;
   gap: 18px;
@@ -109,17 +96,12 @@ body {
   color: var(--primary);
   transition: 0.3s;
 }
-
 .social-icons i:hover {
   color: var(--secondary);
 }
-
-/* Show menu when toggle is checked */
 .nav-toggle:checked ~ .nav-menu {
   display: flex;
 }
-
-/* ========== TABLET & DESKTOP ========== */
 @media (min-width: 768px) {
 
   .nav-container {
@@ -130,7 +112,6 @@ body {
     height: 50px;
   }
 
-  /* Hide hamburger, show menu inline */
   .nav-toggle-label {
     display: none;
   }
@@ -163,8 +144,6 @@ body {
     width: auto;
   }
 }
-
-/* Larger screens: just refine spacing */
 @media (min-width: 1024px) {
   .page-content {
     padding: 120px 40px 40px;
