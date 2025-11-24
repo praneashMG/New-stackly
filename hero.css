@@ -134,4 +134,6 @@
     flex-direction: column;
   }
 }
-    
+.slide:first-child {
+  opacity: 1;
+}
