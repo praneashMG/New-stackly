@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="hero.css">
+    <link rel="stylesheet" href="about-stackly.css">
 </head>
 <body>
 <header class="nav-container">
@@ -21,280 +22,273 @@
     <i class="fa-solid fa-bars"></i>
   </label>
   <nav class="nav-menu">
-    <a href="#">Home</a>
+    <a href="index.html">Home</a>
     <a href="#">Featured Listings</a>
-    <a href="About us.html">About Us</a>
+    <a href="#">About Us</a>
     <a href="#">Contact</a>
     <div class="social-icons">
       <i class="fa-solid fa-phone"></i>
     </div>
   </nav>
 </header>
-<section class="hero-slider">
-  <div class="hero-overlay"></div>
-<div class="slides">
-  <div class="slide active">
-    <div class="slide-image" style="background-image: url('https://i.ytimg.com/vi/KCvcz29FGpM/maxresdefault.jpg'); background-size: cover; background-position: center;"></div>
-  </div>
+  <!-- SECTION NAME: alt-hero-section -->
+  <section id="alt-hero-section" class="alt-hero">
 
-  <div class="slide">
-    <div class="slide-image" style="background-image: url('https://avatars.mds.yandex.net/get-altay/13790728/2a00000192b280002c4ba510a70aae13ca2d/XXL_height'); background-size: cover; background-position: center;"></div>
-  </div>
+    <div class="alt-hero__overlay" aria-hidden="true"></div>
 
-  <div class="slide">
-    <div class="slide-image" style="background-image: url('https://d2cbe6qj96hbor.cloudfront.net/puzzles/ENJC21ZLBLD7V15Y.jpg'); background-size: cover; background-position: center;"></div>
-  </div>
+    <div class="alt-hero__inner">
+      <div class="alt-hero__content">
 
-  <div class="slide">
-    <div class="slide-image" style="background-image: url('https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1FrtQb.img?w=1920&h=1080&m=4&q=74'); background-size: cover; background-position: center;"></div>
-  </div>
+        <!-- Large heading (keeps content identical) -->
+        <h1 class="alt-hero__title">We Are <span class="alt-hero__brand">Stackly</span></h1>
 
-</div>
-
-  <div class="hero-content">
-    <p class="eyebrow">Find your perfect fit</p>
-    <h1 class="hero-title">
-      Discover Your <span>Elegant</span> Home!
-    </h1>
-    <p class="hero-subtitle">
-      We can find you the perfect property & help you locate the home of your dreams.
-    </p>
-    <div class="hero-cta">
-      <a href="#" class="btn btn-primary">Explore Properties</a>
-      <a href="#" class="btn btn-outline">Request Callback</a>
-    </div>
-    <div class="hero-stats">
-    </div>
-  </div>
-</section>
-<section class="properties-section" id="feature-properties">
-  <div class="properties-header">
-    <p class="section-tag">Popular Listings</p>
-    <h2 class="section-title">Feature Properties</h2>
-    <p class="section-subtitle">
-      Discover the most sought-after homes and investment opportunities. From luxury villas to smart city apartments, these listings are curated for style,
-      location, and value. Explore what’s trending and find your next property with confidence.
-    </p>
-  </div>
-
-  <div class="properties-grid">
-    <!-- CARD 1 -->
-    <article class="property-card">
-      <div class="property-image-wrapper">
-        <img src="https://cdna.artstation.com/p/marketplace/presentation_assets/003/125/410/large/file.jpg?1698019350" alt="Modern Villa" class="property-image">
-        <span class="property-price-pill">$3,000</span>
-      </div>
-
-      <div class="property-body">
-        <h3 class="property-title">Modern Villa</h3>
-        <p class="property-location">199, svd California</p>
-
-        <hr class="property-divider">
-
-        <div class="property-meta">
-          <span>🏠 4453 sqft</span>
-          <span><i class="fa-solid fa-bed"></i> 2</span>
-          <span><i class="fa-solid fa-shower"></i>2</span>
+        <!-- small decorative divider -->
+        <div class="alt-hero__decor" aria-hidden="true">
+          <span class="alt-hero__decor-box"></span>
+          <span class="alt-hero__decor-dashes"></span>
         </div>
 
-        <button class="property-btn">View Details</button>
-      </div>
-    </article>
+        <!-- main paragraph -->
+        <p class="alt-hero__lead">
+          Stackly is built exclusively for the real estate world. We empower agents, developers, and property
+          owners with sleek, high-performance websites that convert browsers into buyers. From dynamic listings
+          to secure lead capture, every feature is designed to elevate your property business.
+        </p>
 
-    <!-- CARD 2 -->
-    <article class="property-card">
-      <div class="property-image-wrapper">
-        <img src="https://images.dwell.com/photos/6397359035572019200/6397372041219911680/large.jpg" alt="Modern Villa" class="property-image">
-        <span class="property-price-pill">$3,000</span>
-      </div>
-
-      <div class="property-body">
-        <h3 class="property-title">Modern Villa</h3>
-        <p class="property-location">199, svd California</p>
-
-        <hr class="property-divider">
-
-        <div class="property-meta">
-          <span>🏠 4453 sqft</span>
-          <span><i class="fa-solid fa-bed"></i> 2</span>
-          <span><i class="fa-solid fa-shower"></i> 2</span>
+        <!-- CTA -->
+        <div class="alt-hero__actions">
+          <a href="#contact" class="alt-cta" role="button">Contact Us Now</a>
+          <a href="#learn" class="alt-cta alt-cta--ghost">Learn More</a>
         </div>
 
-        <button class="property-btn">View Details</button>
       </div>
-    </article>
+    </div>
 
-    <!-- CARD 3 -->
-    <article class="property-card">
-      <div class="property-image-wrapper">
-        <img src="https://abu-dhabi.realestate/wp-content/uploads/2023/03/kayan-9.jpg" alt="Modern Villa" class="property-image">
-        <span class="property-price-pill">$3,000</span>
+  </section>
+
+
+   <!-- SECTION: cards-section -->
+  <section id="cards-section" class="cs-section">
+
+    <!-- background area (image is set via CSS) -->
+    <div class="cs-hero"></div>
+
+    <!-- cards container - these overlap the hero -->
+    <div class="cs-cards-wrap">
+      <div class="cs-cards">
+
+        <article class="cs-card" tabindex="0" aria-labelledby="c1">
+          <div class="cs-card__icon" aria-hidden="true">
+            <!-- simple icon (circle target) -->
+            <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="M12 8v4l2 2"/></svg>
+          </div>
+          <h3 id="c1" class="cs-card__title">Our Vision</h3>
+          <p class="cs-card__text">To redefine how properties are discovered, listed, and sold—by blending elegant design with powerful technology. We envision a future where every transaction is rewarding.</p>
+        </article>
+
+        <article class="cs-card" tabindex="0" aria-labelledby="c2">
+          <div class="cs-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4"/><path d="M17 4v6a5 5 0 0 1-10 0V4h10z"/></svg>
+          </div>
+          <h3 id="c2" class="cs-card__title">Our Goals</h3>
+          <p class="cs-card__text">Empower agents and property owners with intuitive tools — maximize visibility for every listing and deliver a premium experience across devices and languages.</p>
+        </article>
+
+        <article class="cs-card" tabindex="0" aria-labelledby="c3">
+          <div class="cs-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a1 1 0 0 1-1 1h-6"/><path d="M3 9v-2a1 1 0 0 1 1-1h4"/><path d="M7 9v6M17 9v6"/></svg>
+          </div>
+          <h3 id="c3" class="cs-card__title">Our Mission</h3>
+          <p class="cs-card__text">To help real estate professionals grow their business by providing a fast, secure platform that's built for conversion. We're here to simplify the process and elevate results.</p>
+        </article>
+
       </div>
+    </div>
 
-      <div class="property-body">
-        <h3 class="property-title">Modern Villa</h3>
-        <p class="property-location">199, svd California</p>
+  </section>
 
-        <hr class="property-divider">
+  <!-- SECTION: alt-about-creative-section -->
+  <section id="alt-about-creative-section" class="aac-section">
 
-        <div class="property-meta">
-          <span>🏠 4453 sqft</span>
-          <span><i class="fa-solid fa-bed"></i> 2</span>
-          <span><i class="fa-solid fa-shower"></i>2</span>
+    <div class="aac-inner">
+
+      <!-- LEFT: Text Column -->
+      <div class="aac-text">
+        <h2 class="aac-title">About Our</h2>
+
+        <div class="aac-divider" aria-hidden="true">
+          <span class="aac-divider__box"></span>
+          <span class="aac-divider__dashes"></span>
         </div>
 
-        <button class="property-btn">View Details</button>
+        <p class="aac-lead">
+          We are Stackly. Over 25+ years experience in real estate text of the printing and typesetting industry.
+          Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s. Lorem Ipsum is simply
+          dummy text of the printing and typesetting industry.
+        </p>
+
+        <div class="aac-lists">
+          <ul class="aac-list">
+            <li>Find Your Dream Home</li>
+            <li>Buy, Rent, and Sell Homes</li>
+            <li>Free, Fair &amp; Direct Listing</li>
+          </ul>
+
+          <ul class="aac-list">
+            <li>Find Your Dream Home</li>
+            <li>Buy, Rent, and Sell Homes</li>
+            <li>Free, Fair &amp; Direct Listing</li>
+          </ul>
+        </div>
       </div>
-    </article>
-  </div>
-</section>
 
-<section class="about-section" id="about">
-  <!-- LEFT: image cluster -->
-  <div class="about-media">
-    <div class="image-cluster">
-      <div class="image-circle image-circle--lg">
-        <img src="http://architizer-prod.imgix.net/media/1421417995105Sar_15.jpg" alt="Modern interior 1">
-      </div>
-      <div class="image-circle image-circle--md">
-        <img src="https://avatars.mds.yandex.net/get-altay/374295/2a0000015b169fe545e3c3565ce25129ccc2/XXL" alt="Modern interior 2">
-      </div>
-      <div class="image-circle image-circle--sm">
-        <img src="https://lazenza.com/wp-content/uploads/2024/11/open-plan-living-room-villa.webp" alt="Modern interior 3">
-      </div>
-    </div>
-  </div>
+      <!-- RIGHT: Media Column -->
+      <aside class="aac-media" aria-hidden="false">
+        <div class="aac-media__left">
+          <figure class="aac-card aac-card--media aac-card--large" tabindex="0">
+            <img src="https://wallpapers.com/images/hd/3d-model-home-9y5pusjbh3vcrjya.jpg" alt="Living room image" />
+          </figure>
+        </div>
 
-  <!-- CENTER: gradient divider & floating tags -->
-  <div class="about-divider">
-    <div class="divider-line"></div>
-   
-  </div>
+        <div class="aac-media__right">
+          <figure class="aac-card aac-card--media aac-card--small" tabindex="0">
+            <img src="https://i.ytimg.com/vi/9_ZJ9wjEeVc/maxresdefault.jpg" alt="Team image" />
+          </figure>
 
-  <!-- RIGHT: text + features -->
-  <div class="about-content">
-    <div class="about-kicker">About Us</div>
+          <figure class="aac-card aac-card--media aac-card--small" tabindex="0">
+            <img src="https://planner5d.com/blog/content/images/size/w1000/2025/06/two-story-home.jpg" alt="Couple holding Home sign" />
+          </figure>
+        </div>
+      </aside>
 
-    <h2 class="about-title">
-      Grow your real estate business with
-      Stackly.
-    </h2>
-
-    <div class="title-underline"></div>
-
-    <div class="about-quote">
-      <div class="about-quote-icon">“</div>
-      <p>Built for modern real-estate brands that care about both growth and sustainability.</p>
     </div>
 
-    <p class="about-body">
-      Take your listings to the next level with GreenStack—your all-in-one platform
-      for showcasing properties, attracting buyers, and streamlining your workflow.
-      Whether you’re a solo agent or a growing team, we help you stand out in a
-      competitive market.
+  </section>
+<section class="whyus-section">
+  <div class="whyus-overlay"></div>
+
+  <div class="whyus-content">
+    <h2 class="whyus-title">Why Choose Us</h2>
+
+    <p class="whyus-description">
+      We deliver impactful and innovative solutions with unmatched precision.
+      Our approach blends modern technology, trusted expertise, and
+      client-centric values to create meaningful experiences that elevate your growth.
     </p>
 
-    <div class="features">
-  <div class="feature">
-    <div class="feature-icon-wrapper">
-      <i class="fa-solid fa-list"></i>
-    </div>
-
-    <div class="feature-content">
-      <span class="feature-title">It’s easier to register</span>
-      <p class="feature-text">
-        Create your account, upload listings, and reach verified buyers in minutes—
-        no technical skills required.
-      </p>
-    </div>
+    <a href="#" class="whyus-button">Contact Us Today</a>
   </div>
-
-  <div class="feature">
-    <div class="feature-icon-wrapper">
-      <i class="fa-solid fa-check"></i>
-    </div>
-
-    <div class="feature-content">
-      <span class="feature-title">Get your listings promoted</span>
-      <p class="feature-text">
-        Built-in SEO tools, smart recommendations, and featured slots ensure your
-        homes are seen by the right audience.
-      </p>
-    </div>
-  </div>
-</div>
 </section>
+<section class="statShowcaseSection">
+  <div class="statShowcaseContainer">
 
-<section class="hiw-section" id="how-it-works">
-  <div class="hiw-overlay"></div>
-
-  <div class="hiw-inner">
-    <span class="hiw-label">Our Process</span>
-
-    <h2 class="hiw-title">How it Works?</h2>
-
-    <p class="hiw-text">
-      Stackly streamlines your property journey—from listing to lead generation—
-      so you can focus on closing deals, not chasing clicks.
-    </p>
-  </div>
-</section>  
-<section class="property-cta">
-  <div class="property-cta-box">
-    
-    <h2 class="property-title">Ready to Buy Your Property?</h2>
-
-    <p class="property-description">
-      Whether you're buying a family home or a luxury estate, Stackly makes it easy to connect.
-      Just enter your details, list your property, and buy your home.
-    </p>
-
-    <div class="property-icon">
-      <i class="fa-solid fa-chevron-down"></i>
+    <!-- Card 1 -->
+    <div class="statShowcaseCard">
+      <div class="statShowcaseIcon">
+        <i class="fa-solid fa-house"></i>
+      </div>
+      <h2 class="statShowcaseNumber">15,856</h2>
+      <p class="statShowcaseLabel">Home Listing Available</p>
     </div>
 
-    <button class="property-btn">List Your Property</button>
+    <!-- Card 2 -->
+    <div class="statShowcaseCard">
+      <div class="statShowcaseIcon">
+        <i class="fa-solid fa-eye"></i>
+      </div>
+      <h2 class="statShowcaseNumber">200,000</h2>
+      <p class="statShowcaseLabel">Visitors each month</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="statShowcaseCard">
+      <div class="statShowcaseIcon">
+        <i class="fa-solid fa-percent"></i>
+      </div>
+      <h2 class="statShowcaseNumber">1,487</h2>
+      <p class="statShowcaseLabel">Average buyers saving</p>
+    </div>
 
   </div>
 </section>
 
-<section class="gp-stats-wrapper">
-  <div class="gp-stats-container">
+<!-- Font Awesome -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
 
-    <div class="gp-stat-box">
-      <div class="gp-stat-icon">
-        <i class="fa-solid fa-file-contract"></i>
-      </div>
-      <h3 class="gp-stat-value" data-target="98700">0</h3>
-      <p class="gp-stat-text">Properties Listed</p>
+<section class="teamshowcase-section">
+    <div class="teamshowcase-container">
+
+        <h2 class="teamshowcase-title">Meet Our Team</h2>
+
+        <div class="teamshowcase-divider">
+            <span class="line-left"></span>
+            <span class="divider-icon">★</span>
+            <span class="line-right"></span>
+        </div>
+
+        <p class="teamshowcase-desc">
+            Behind every successful project is a team of passionate professionals.  
+            At Stackly, we bring together creative minds, technical experts, and  
+            client-focused strategists to deliver exceptional results—every time.
+        </p>
+
     </div>
-
-    <div class="gp-stat-box">
-      <div class="gp-stat-icon">
-        <i class="fa-solid fa-house-circle-check"></i>
-      </div>
-      <h3 class="gp-stat-value" data-target="48751">0</h3>
-      <p class="gp-stat-text">Properties Sold</p>
-    </div>
-
-    <div class="gp-stat-box">
-      <div class="gp-stat-icon">
-        <i class="fa-solid fa-users"></i>
-      </div>
-      <h3 class="gp-stat-value" data-target="67845">0</h3>
-      <p class="gp-stat-text">Satisfied Clients</p>
-    </div>
-
-    <div class="gp-stat-box">
-      <div class="gp-stat-icon">
-        <i class="fa-solid fa-award"></i>
-      </div>
-      <h3 class="gp-stat-value" data-target="10">0</h3>
-      <p class="gp-stat-text">Realtor Awards</p>
-    </div>
-
-  </div>
 </section>
+
+<section class="proTeam-section">
+    <div class="proTeam-heading">
+        <h2>Meet Our Expert Team</h2>
+        <div class="proTeam-divider">
+            <span></span>
+            <div class="proTeam-dot"></div>
+            <span></span>
+        </div>
+        <p class="proTeam-subtext">
+            Our team consists of creative thinkers, strategic planners, and passionate professionals
+            dedicated to delivering outstanding results every single time.
+        </p>
+    </div>
+
+    <div class="proTeam-wrapper">
+        <!-- Team Member 1 -->
+        <div class="proTeam-card">
+            <div class="proTeam-imgBox">
+                <img src="https://miro.medium.com/v2/resize:fit:2400/1*Hz-4BjNb3fsSwKP3tCAB1Q@2x.jpeg" alt="Team Member">
+            </div>
+            <h3 class="proTeam-name">John Doe</h3>
+            <p class="proTeam-role">Agent</p>
+        </div>
+
+        <!-- Team Member 2 -->
+        <div class="proTeam-card">
+            <div class="proTeam-imgBox">
+                <img src="https://miro.medium.com/v2/resize:fit:2400/1*Hz-4BjNb3fsSwKP3tCAB1Q@2x.jpeg" alt="Team Member">
+            </div>
+            <h3 class="proTeam-name">Jane Doe</h3>
+            <p class="proTeam-role">Agent</p>
+        </div>
+
+        <!-- Team Member 3 -->
+        <div class="proTeam-card">
+            <div class="proTeam-imgBox">
+                <img src="https://miro.medium.com/v2/resize:fit:2400/1*Hz-4BjNb3fsSwKP3tCAB1Q@2x.jpeg" alt="Team Member">
+            </div>
+            <h3 class="proTeam-name">John Doe</h3>
+            <p class="proTeam-role">Agent</p>
+        </div>
+
+        <!-- Team Member 4 -->
+        <div class="proTeam-card">
+            <div class="proTeam-imgBox">
+                <img src="https://miro.medium.com/v2/resize:fit:2400/1*Hz-4BjNb3fsSwKP3tCAB1Q@2x.jpeg" alt="Team Member">
+            </div>
+            <h3 class="proTeam-name">Jane Doe</h3>
+            <p class="proTeam-role">Agent</p>
+        </div>
+    </div>
+</section>
+
+
 <!-- =========================
        TESTIMONIAL SECTION
 ========================= -->
@@ -393,10 +387,8 @@
 
         </div>
     </div>
-
-  
-
 </section>
+
 
 <!-- FOOTER: Black Theme -->
 <footer class="site-footer footer--dark" role="contentinfo">
@@ -445,10 +437,6 @@
   </div>
 </footer>
 
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-<script src="hero.js"></script>
 <script>
 (function () {
   const track = document.getElementById('carouselTrack');

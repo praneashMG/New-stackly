@@ -39,3 +39,43 @@ showSlide(index);
       aboutSection.classList.add("visible");
     }
   });
+
+  const counters = document.querySelectorAll('.gp-stat-value');
+let counterStarted = false;
+
+function runCounter() {
+  counters.forEach(counter => {
+    let target = +counter.getAttribute("data-target");
+    let current = 0;
+    let speed = Math.ceil(target / 100);
+
+    function animate() {
+      current += speed;
+      if (current < target) {
+        counter.innerText = current.toLocaleString() + "+";
+        requestAnimationFrame(animate);
+      } else {
+        counter.innerText = target.toLocaleString() + "+";
+      }
+    }
+    animate();
+  });
+}
+
+function scrollTrigger() {
+  const section = document.querySelector(".gp-stats-wrapper");
+  let top = section.getBoundingClientRect().top;
+
+  if (top < window.innerHeight - 100 && !counterStarted) {
+    counterStarted = true;
+    runCounter();
+  }
+}
+
+window.addEventListener("scroll", scrollTrigger);
+
+
+
+
+
+
