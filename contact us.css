@@ -215,7 +215,6 @@
 .map-box:hover ~ .contact-box {
   width: 30% !important;
 }
-
 /* Responsive */
 @media (max-width: 900px) {
 
@@ -228,6 +227,7 @@
   .map-box {
     width: 100% !important;
     flex: none !important;
+    transition: none !important;  /* REMOVE ALL ANIMATION ON MOBILE */
   }
 
   .map-box iframe {
