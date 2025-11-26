@@ -103,6 +103,13 @@
 .green-info-card:hover .green-card-icon {
   background: #C5A048;
 }
+.slide-image {
+  background-image: url('https://i.ytimg.com/vi/MXfLI1TXxk4/maxresdefault.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 
 .green-card-title {
   font-size: 18px;
