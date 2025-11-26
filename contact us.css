@@ -216,18 +216,20 @@
   width: 30% !important;
 }
 
-
 /* Responsive */
 @media (max-width: 900px) {
+
   .dual-section {
     flex-direction: column;
+    height: auto;
   }
 
-.contact-box,
-.map-box {
-  transition: width 0.8s ease-in-out;
-
-}
+  .contact-box,
+  .map-box {
+    width: 100% !important;
+    flex: none !important;
+    transition: width 0.8s ease-in-out;
+  }
 
   .map-box iframe {
     min-height: 350px;
