@@ -116,318 +116,120 @@
   line-height: 1.6;
 }
 
+/* ========== FORM AREA FIXED AND EQUAL HEIGHT ========== */
+.dual-section {
+  display: flex;
+  width: 100%;
+  min-height: 520px;  /* Increased so button fits */
+  align-items: stretch; /* BOTH SIDES SAME HEIGHT */
+}
 
-
-/* ========== FORM AREA ========== */
-
-.green-form-wrapper {
+/* LEFT FORM */
+.contact-box {
+  width: 50%;
   background: #eefbf1;
-  padding: 40px 35px;
-  border-radius: 18px;
-  max-width: 750px;
-  margin: auto;
-  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.15);
-  animation: fadeUp 1.2s ease;
-}
-
-.green-form-title {
-  text-align: center;
-  font-size: 26px;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-
-.green-form {
-  margin-top: 20px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  align-items: center;
+  border-right: 4px solid #d8ecd8;
 }
 
-.green-input-field,
-.green-textarea {
+/* FIX: FORM TAKES FULL HEIGHT WITHOUT PUSHING BUTTON OUTSIDE */
+.contact-form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 20px;
+  height: 100%;
+}
+
+/* Input Box Styles */
+.contact-form input,
+.contact-form textarea {
   width: 100%;
   padding: 14px;
-  border: 2px solid #c5e6ce;
   border-radius: 10px;
-  font-size: 14px;
-  transition: border 0.3s ease, background 0.3s ease;
+  border: 2px solid #c9e7d0;
+  font-size: 15px;
+  transition: 0.3s ease;
 }
 
-/* Hover & focus */
-.green-input-field:hover,
-.green-textarea:hover {
-  background: #ffffff;
-  border-color: #1B8F3A;
-}
-
-.green-input-field:focus,
-.green-textarea:focus {
-  outline: none;
-  background: #ffffff;
-  border-color: #C5A048;
-}
-
-.green-textarea {
-  height: 130px;
+.contact-form textarea {
+  height: 120px;
   resize: none;
 }
 
-
-
-/* BUTTON */
-.green-submit-btn {
-  width: 180px;
+/* FIX: BUTTON STAYS WITHIN THE BOX ALWAYS */
+.contact-form button {
+  margin-top: auto; /* PUSHES button to bottom but inside box */
+  width: 200px;
   padding: 12px;
+  border: none;
   background: #1B8F3A;
   color: white;
-  border: none;
+  font-size: 16px;
   border-radius: 10px;
   cursor: pointer;
-  font-weight: 500;
-  font-size: 15px;
-  margin-top: 10px;
   transition: 0.3s ease;
 }
 
-/* Hover button */
-.green-submit-btn:hover {
+/* Hover */
+.contact-form input:hover,
+.contact-form textarea:hover {
+  border-color: #1B8F3A;
+  background: white;
+}
+
+.contact-form button:hover {
   background: #C5A048;
-  transform: scale(1.06);
-}
-
-
-
-/* ========== ANIMATIONS ========== */
-
-@keyframes fadeUp {
-  0% { opacity: 0; transform: translateY(25px); }
-  100% { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fadeLoad {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-
-
-/* ========== MOBILE RESPONSIVE ========== */
-
-@media (max-width: 768px) {
-
-  .green-info-grid {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .green-info-card {
-    width: 90%;
-  }
-
-  .green-form-wrapper {
-    padding: 25px;
-  }
-
-  .green-heading-title {
-    font-size: 24px;
-  }
-}
-  .green-map-section {
-  width: 100%;
-  position: relative;
-  margin-top: 0;     /* keep TOP space */
-  margin-bottom: 0;     /* remove BOTTOM gap */
-  padding-bottom: 0;
-  animation: fadeIn 1.3s ease;
-}
-/* ===========================
-       FLOATING INFO CARD
-   =========================== */
-
-
-
-
-/* ===========================
-           GOOGLE MAP
-   =========================== */
-
-
-/* MAIN MAP SECTION */
-.pro-map-section {
-width: 100%;
-position: relative;
- margin: 0 !important;         /* REMOVE GAP */
-  padding: 0 !important;        /* REMOVE GAP */
-  animation: fadeMapLoad 1.2s ease;
-}
-/* FLOATING CARD */
-.pro-map-card {
-  position: absolute;
-  top: 40px;
-  left: 40px;
-  width: 340px;
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(12px);
-  padding: 25px;
-  border-radius: 14px;
-  border-left: 6px solid red;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.18);
-  animation: cardFade 1s ease;
-  z-index: 10;
-}
-
-/* CARD TEXT */
-.pro-map-title {
-  font-size: 23px;
-  font-weight: 600;
-  margin-bottom: 5px;
-  color: #000;
-}
-
-.pro-map-address {
-  font-size: 14px;
-  color: #444;
-  line-height: 1.6;
-}
-
-/* RATING */
-.pro-rating {
-  margin: 14px 0 8px;
-}
-
-.pro-stars {
-  color: #1B8F3A;    /* green stars */
-  font-size: 18px;
-}
-
-.pro-count {
-  display: block;
-  margin-top: 5px;
-  font-size: 13px;
-  color: #222;
-}
-
-/* BUTTON */
-.pro-map-btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background: red;
-  color: #fff;
-  text-decoration: none;
-  font-size: 14px;
-  border-radius: 8px;
-  transition: 0.3s ease;
-}
-
-.pro-map-btn:hover {
-  background: #000;
   transform: scale(1.05);
 }
 
-/* MAP FRAME */
-.pro-map-frame {
-  width: 100%;
-  height: 500px;
-  overflow: hidden;
-  border-radius: 12px;
+/* MAP SIDE */
+.map-box {
+  width: 50%;
+  height: auto;
 }
 
-.pro-map-frame iframe {
+.contact-box,
+.map-box {
+  transition: width 0.8s ease-in-out;
+
+}
+
+.map-box iframe {
   width: 100%;
   height: 100%;
+  min-height: 520px;  /* MATCHES FORM HEIGHT */
   border: none;
-  display: block;
-  transition: 0.4s ease;
 }
 
-/* Hover zoom */
-.pro-map-frame:hover iframe {
-  transform: scale(1.03);
+/* Remove hover width expand (optional — creates uneven) */
+/* Hover → Expand MAP to 70% and shrink form to 30% */
+.map-box:hover {
+  width: 70% !important;
 }
 
-/* ANIMATIONS */
-@keyframes cardFade {
-  from { opacity: 0; transform: translateY(25px); }
-  to   { opacity: 1; transform: translateY(0); }
+.map-box:hover ~ .contact-box {
+  width: 30% !important;
 }
 
-@keyframes fadeMapLoad {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
 
-/* MOBILE RESPONSIVE */
-@media (max-width: 768px) {
-  .pro-map-card {
-    position: relative;
-    width: 90%;
-    left: 0;
-    top: 0;
-    margin: 0 auto 20px;
+/* Responsive */
+@media (max-width: 900px) {
+  .dual-section {
+    flex-direction: column;
   }
 
-  .pro-map-frame {
-    height: 350px;
-  }
+.contact-box,
+.map-box {
+  transition: width 0.8s ease-in-out;
+
 }
 
-@media (max-width: 480px) {
-  .pro-map-card {
-    padding: 18px;
-  }
-
-  .pro-map-title {
-    font-size: 19px;
-  }
-}
-
-/* ===========================
-          ANIMATIONS
-   =========================== */
-
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-@keyframes floatIn {
-  0% { opacity: 0; transform: translateY(25px); }
-  100% { opacity: 1; transform: translateY(0); }
-}
-
-
-
-/* ===========================
-      MOBILE RESPONSIVE
-   =========================== */
-
-@media (max-width: 768px) {
-
-  .green-map-card {
-    position: relative;
-    width: 90%;
-    left: 0;
-    top: 0;
-    margin: 0 auto 20px;
-  }
-
-  .green-map-frame {
-    height: 400px;
-  }
-}
-
-@media (max-width: 480px) {
-
-  .green-map-card {
-    padding: 20px;
-  }
-
-  .green-map-title {
-    font-size: 18px;
-  }
-
-  .green-stars {
-    font-size: 16px;
+  .map-box iframe {
+    min-height: 350px;
   }
 }
