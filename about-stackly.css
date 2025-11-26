@@ -21,7 +21,13 @@
 
 /* page reset */
 *{box-sizing:border-box}
-html,body{height:100%;margin:0}
+html, body {
+  overflow-x: hidden;   /* disable horizontal scrolling */
+  overflow-y: auto;     /* allow vertical scrolling */
+  width: 100%;
+}
+
+
 
 /* HERO SECTION */
 #alt-hero-section.alt-hero{
@@ -357,11 +363,12 @@ html,body{height:100%;margin:0}
 
 /* lead paragraph */
 .aac-lead{
-  font-size:15.5px;
+  font-size:19.5px;
   color:var(--muted);
   line-height:1.8;
-  margin: 0 0 22px;
-  max-width: 640px;
+  margin: 2rem 0 28px;
+  max-width: 740px;
+   margin-left: 50px;
 }
 
 /* two-column lists */
@@ -370,6 +377,8 @@ html,body{height:100%;margin:0}
   grid-template-columns: 1fr 1fr;
   gap: 8px 36px;
   margin-top: 6px;
+     margin-left: 50px;
+
 }
 .aac-list{ list-style:none; padding:0; margin:0; }
 .aac-list li{
@@ -673,7 +682,8 @@ html,body{height:100%;margin:0}
   position: relative;
   width: 100%;
   height: 80vh;
-  background: url("https://cdn.simplegreen.com/web22/images/cleaning_tips/tip_hero/living-room/floors-engineered-wood.jpg") center/cover no-repeat;
+  /* background: url("https://cdn.simplegreen.com/web22/images/cleaning_tips/tip_hero/living-room/floors-engineered-wood.jpg") center/cover no-repeat; */
+  background: url("Aboutus why choose us.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: flex-end;

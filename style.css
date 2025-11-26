@@ -109,6 +109,7 @@ body {
 
   .nav-container {
     padding: 15px 40px;
+    
   }
 
   .logo img {
@@ -117,10 +118,12 @@ body {
 .social-icons i,
 .nav-menu i {
     color: #fff !important;
+    
 }
 
   .nav-toggle-label {
     display: none;
+    
   }
 
   .nav-menu {
