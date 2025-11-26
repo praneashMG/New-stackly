@@ -209,11 +209,11 @@
 /* Remove hover width expand (optional — creates uneven) */
 /* Hover → Expand MAP to 70% and shrink form to 30% */
 .map-box:hover {
-  width: 70% !important;
+  width: 110% !important;
 }
 
 .map-box:hover ~ .contact-box {
-  width: 30% !important;
+  width: 90% !important;
 }
 /* Responsive */
 @media (max-width: 900px) {
