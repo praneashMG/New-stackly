@@ -97,7 +97,6 @@ html,body{height:100%;margin:0}
   height:18px;
   border-radius:4px;
   background: rgba(255,180,0,0.06);
-  border: 2px solid rgba(255,180,0,0.95); /* amber */
 }
 .alt-hero__decor-dashes{
   width:86px;
@@ -345,9 +344,9 @@ html,body{height:100%;margin:0}
 /* decorative divider (square + dashed) */
 .aac-divider{ display:flex; gap:12px; align-items:center; margin-bottom:18px }
 .aac-divider__box{
-  width:18px; height:18px; border-radius:6px;
-  border:2px solid var(--green);
-  background: linear-gradient(180deg, rgba(31,164,99,0.06), rgba(255,255,255,0.02));
+  /* width:18px; height:18px; border-radius:6px; */
+  /* border:2px solid var(--green); */
+  background: linear-gradient(190deg, rgba(31,164,99,0.06), rgba(255,255,255,0.02));
   box-shadow: 0 6px 18px rgba(31,164,99,0.02) inset;
 }
 .aac-divider__dashes{
@@ -507,12 +506,8 @@ html,body{height:100%;margin:0}
 /* Root / theme */
 
 /* basic reset */
-*{box-sizing:border-box}
-html,body{height:100%;margin:0;background:var(--wc-white);color:var(--wc-black);-webkit-font-smoothing:antialiased}
-a{color:inherit}
 
 /* SECTION wrapper */
-#wc-why-choose-block, #why-choose-block, .wc-section {}
 
 /* HERO area with large background image */
 .wc-hero{
@@ -795,7 +790,8 @@ a{color:inherit}
   border-radius: 18px;
   text-align: center;
   color: #fff;
-  backdrop-filter: blur(8px);
+  background: rgba(255,255,255,0.4);
+filter: blur(0px);
   transition: all 0.4s ease;
   cursor: pointer;
   box-shadow: 0 6px 20px rgba(0,0,0,0.15);
