@@ -228,7 +228,6 @@
   .map-box {
     width: 100% !important;
     flex: none !important;
-    transition: width 0.8s ease-in-out;
   }
 
   .map-box iframe {
